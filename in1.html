@@ -11,6 +11,20 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        #qinghua h2 {
+            font-family:"华文楷体";  /*设置字体*/
+            width:600px;    /*设置元素宽度*/
+            height: 400px;
+            margin:10px auto;   /*设置外边距*/
+            padding:30px;   /*设置内边距*/
+            background:lightblue;  /*设置背景颜色*/
+            font-size: 36px;  /*设置文字大小*/
+            color:green;  /*设置文字颜色*/
+            text-align: center; /*设置文字居中*/
+            border:1px solid #CCCCCC;  /*设置元素边框*/
+            box-shadow:3px 3px 6px #999999;  /*设置边框阴影*/
+            writing-mode:vertical-rl;  /*设置以垂直方式从右向左显示*/
+        }
         .row {
             margin-bottom: 10px;
             padding: 9px;
@@ -131,7 +145,7 @@
             margin:50px auto; /*设置元素外边距*/
             font-weight: 500; /*设置字体粗细*/
             text-align: center; /*设置文字居中*/
-            color: #b4b4ff; /*设置文字颜色*/
+            color: #d36da7; /*设置文字颜色*/
             -webkit-animation:swing 2s infinite;/*设置动画*/
         }
 
@@ -172,9 +186,9 @@
                 <ul>
                     <li><a class="active" href="javascript:;">主页</a></li>
                     <li><a href="javascript:;">小情话</a></li>
-                    <li><a href="javascript:;">记录</a></li>
-                    <li><a href="javascript:;">留言板</a></li>
                     <li><a href="javascript:;">资料</a></li>
+                    <li><a href="javascript:;">留言板</a></li>
+                    <li><a href="javascript:;">一封信</a></li>
                 </ul>
             </div>
         </div>
@@ -186,7 +200,7 @@
                             <div style="height: 350px;">
                             </div>
                             <h4>恋爱计时器</h4>
-                            <li  class="lianaijishiqi"><a href=""></a></li>
+                            <li class="lianaijishiqi"><a href=""></a></li>
                         </ul>
                     </div>
         <div style="width: 10px;"></div>
@@ -199,32 +213,81 @@
                             <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
                         </div>
                         <div class="col">
-                            1212
+                            <img src="img/you.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
 
                 </div>
-                <h1>amoxiang</h1>
+                <h1>爱心发射—></h1>
                 <br>
                 <br>
 
             </div>
-            <div id="qinghua" class="item">
-                <div class="row" style="height: 300px;">
-                    <div id="qinghuatext" class="col ">
-                        <h1>12121</h1>
+            <div id="qinghua" class="item img-fluid">
+                <div class="row" style="height: 400px">
+                    <div class="col-auto text-center w-100">
+                        <h2 class="div_name">来抽取俺的小情话叭</h2>
                     </div>
                 </div>
                 <div class="row ">
                     <div class="col offset-4">
-                        <button>开始</button>
-                        <button>结束</button>
+                        <button id="but_on">开始</button>
+                        <button id="but_off">暂停</button>
                     </div>
                 </div>
             </div>
-            <div class="item">记录</div>
-            <div class="item">留言板</div>
-            <div class="item">资料</div>
+
+
+
+            <div class="item">
+                <table class="table table-hover table-striped">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">名字</th>
+                    <th scope="col">适用于</th>
+                    <th scope="col">使用方法</th>
+                    <th scope="col">注意</th>
+                </tr>
+                </thead>
+                <!-- 表格主体 -->
+                <tbody>
+                <tr>
+                    <td scope="col">莲花清瘟</td>
+                    <td>流行性、病毒性感冒引起的高热、头痛、咽痛、肌肉酸痛，以及鼻塞、流涕、咳嗽等症状</td>
+                    <td>一次4粒，一日3次</td>
+                    <td>用药期间不要吃辛辣十五，不宜以温性，凉性药物使用（尽量与布洛芬分开吃）</td>
+
+                </tr>
+                <tr>
+                    <td scope="col">999</td>
+                    <td>感冒引起的头痛，发热， 鼻塞 ，流涕，咽痛</td>
+                    <td>一次10克(1袋)，一日3次。</td>
+                    <td>.忌烟、酒及辛辣、生冷、油腻，含咖啡因，得饮酒或含有酒精的饮料，脾胃虚寒，症见腹痛、喜暖、泄泻者慎用</td>
+                </tr>
+                <tr>
+                    <td scope="col">布洛芬</td>
+                    <td>效果止疼，肚子疼，也用于普通感冒或流行性感冒引起的发热，发烧可吃。</td>
+                    <td>一次一粒，持续发热可以间隔4—6小时再给药</td>
+                    <td>与莲花清瘟分开吃</td>
+
+                </tr>
+                <tr>
+                    <td scope="col">消食健胃片</td>
+                    <td>食欲不振，消化不良，脘腹胀满</td>
+                    <td>一次3~5片，一日1~3次</td>
+                    <td>在服用健胃消食片时，饮食宜清淡，不可以喝酒，也应该避免辛辣油腻以及生冷的食物</td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="item"><h3>开发中in……</h3></div>
+            <div class="item"><h3>一封信</h3>
+                <div class="row">
+                    <div class="col-auto w-100">
+                        <a class="btn btn-warning text-white btn-lg" href="01.html" role="button">点击进入</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 </div>
@@ -242,6 +305,36 @@
 
 </body>
 <script>
+    let arr = ['今晚不看星星就看你的眼睛',
+        '你追逐这世界 我追逐你背影',
+        '你与明月清风一样 都是小宝藏',
+        '两隔的世界; 无名的信件;\n 短暂的停留; 长久的记忆;\n 说这么多，只是想说：我想你了。',
+        '彼采萧兮，一日不见，如三秋兮',
+        '希望我们苦尽甘来\t殊途同归\n在未来的某一天\n但我想和你分享喜悦的时候\n身边依旧是一起走过的你',
+        '爱就是，我想到你的时候\n你就是你，风吹麦浪是你\n忽近忽远的脚步声是你\n星星上的花也是你。\n\t——《小王子》',
+        '别担心，爱你的人会对你偏心'];
+    const but_on = document.querySelector('#but_on');
+    let div_name = document.querySelector('.div_name');
+    let idconst = 0;
+
+    but_on.addEventListener('click', function () {
+        idconst =  setInterval( function () {
+            div_name.innerText =arr[Math.floor(Math.random()*8)];
+            console.log(Math.floor(Math.random()*8))
+            console.log(arr[Math.floor(Math.random()*8)])
+        },40);
+        document.getElementById("but_on").disabled=true;
+    })
+
+    let but_off = document.querySelector('#but_off');
+    but_off.addEventListener('click',function () {
+        clearInterval(idconst);
+        document.getElementById("but_on").disabled=false;
+
+    })
+
+
+
     let lianai = document.querySelector(".lianaijishiqi")
     function showTime() {
         //设置时间
